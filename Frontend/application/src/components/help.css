@@ -1,0 +1,87 @@
+/* Overall Container */
+.about-container {
+    background-color: #f4f4f9;
+    padding: 40px 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content Section */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 95px;
+    gap: 25px;
+}
+
+/* Individual Cards */
+.about-card {
+    background-color: rgb(189, 209, 228);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Cards */
+.about-card:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.about-card h2 {
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #191970;
+    margin-bottom: 15px;
+}
+
+/* Card Content */
+.about-card p {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Contact Info Section */
+.contact-info p {
+    font-size: 18px;
+}
+
+/* Links Styling */
+a {
+    color: #c65945;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #8a4f2e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .about-card {
+        padding: 20px;
+    }
+
+    .about-card h2 {
+        font-size: 24px;
+    }
+
+    .about-card p {
+        font-size: 16px;
+    }
+}

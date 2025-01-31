@@ -1,0 +1,160 @@
+/* Cart Page Container */
+.cart {
+    width: 100%;
+    max-width: 1100px; /* Limit max width for better alignment */
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5; /* Slightly lighter background */
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins', sans-serif;
+    padding-top: 90px; /* Ensures content starts below navbar */
+    overflow-y: auto;
+    height: calc(100vh - 80px); /* Ensures it fits within viewport below navbar */
+}
+
+/* Headings */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Cart Item List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 350px; /* Ensures list does not overflow */
+    overflow-y: auto; /* Enables scrolling */
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    border: 1px solid #ddd; /* Subtle border for separation */
+}
+
+/* Remove Button */
+li button {
+    padding: 8px 15px;
+    background: #ff4d4d; /* Red color for remove */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+li button:hover {
+    background: #d43f3f;
+}
+
+/* Cart Icon */
+.cart-icon {
+    font-size: 20px;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Proceed to Payment Button */
+.payment-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+}
+
+.payment-btn:hover {
+    background: #388E3C;
+}
+
+/* Empty Cart Styling */
+.empty-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+}
+
+/* Total Price Section */
+.total-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.total-price span {
+    color: #ff5722;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .cart {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3,
+    p {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 14px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payment-btn {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}

@@ -1,0 +1,165 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Nunito:wght@400;600&family=Dancing+Script:wght@500&display=swap');
+
+/* Navbar Container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #caa183, #302b63, #a35020db, #0680d1d2);
+
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: auto;
+}
+
+/* Logo and Website Name (Same Line) */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Gradient Text Effect for Website Name */
+.logo h1 {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+
+    /* Default fallback color */
+    color: #191970;
+
+    /* Gradient effect */
+    background: linear-gradient(45deg, #43d0ec, #31650b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Subtle shadow without blurring the text */
+    text-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.3);
+
+    /* Animation for a smooth, subtle glow effect */
+    animation: glowingText 4s ease-in-out infinite alternate;
+}
+
+/* Keyframes for smooth glowing effect */
+@keyframes glowingText {
+    0% {
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        text-shadow: 2px 2px 4px rgba(125, 113, 98, 0.8);
+    }
+    100% {
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+
+/* Tagline (Second Line) */
+.tagline {
+    font-size: 21px;
+    color: gold; /* Softer golden shade */
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 2px rgba(140, 69, 185, 0.2);
+    margin-left: 60px;
+    padding-left: 30px;
+}
+
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.nav-links .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links .nav-link:hover {
+    color: #92b572; 
+    transform: translateY(-2px);
+}
+
+/* Divider */
+.nav-links b {
+    font-size: 18px;
+    color: white;
+}
+
+/* Login Button */
+.auth-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.login-button {
+    padding: 10px 18px;
+    font-size: 16px;
+    background: #0fd7bff3;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background: #6e3a1c;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .logo-container {
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .auth-button {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 10px;
+    }
+}

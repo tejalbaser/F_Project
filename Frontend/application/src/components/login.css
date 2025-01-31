@@ -1,0 +1,157 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Body Styling */
+  body {
+    background: linear-gradient(135deg, #a8c0ff, #3f9fdd); /* Classic soft blues */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  /* Keep the upper section as is (for navbar and website name) */
+  .navbar, .website-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    width: 100%;
+    border: #333;
+  }
+  
+  /* Login Box */
+  .login-box {
+    background: rgba(236, 241, 245, 0.759);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 30px;
+    width: 380px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Welcome Section */
+  .welcome-section h2 {
+    font-size: 26px;
+    color: black;  /* Changed to black text */
+    font-weight: bold;
+  }
+  
+  .welcome-section p {
+    font-size: 14px;
+    color: #333;  /* Darker text for better readability */
+    margin-bottom: 20px;
+  }
+  
+  .login-icon {
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+  }
+  
+  /* Form Inputs */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    
+    /* Add a proper border */
+    border: 1.5px solid #333; /* 2px width, solid style, dark gray color */
+    
+    /* Optional: Outline when focused */
+    outline: none; /* Remove default outline */
+    font-size: 16px;
+    background: rgba(229, 115, 115, 0.16);
+    color: black;
+    text-align: center;
+    transition: 0.3s;
+}
+  
+  input::placeholder {
+    color: #333;  /* Darker placeholder text */
+  }
+  
+  input:focus {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+  }
+  /* Button */
+  button {
+    background: radial-gradient(circle,#50a3b6, #0c317f ); /* Soft green gradient for a fresh, professional look */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #0c5e7f, #6bced5); /* Subtle color swap on hover */
+  }
+  
+  
+  /* Additional Links */
+  p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: black;  /* Changed to black text */
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #512e92;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #ffeb3b;
+    background: rgba(255, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
